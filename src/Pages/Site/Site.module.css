@@ -1,0 +1,521 @@
+
+.admin_body_right{
+    width: 100%;
+    right: 0;
+    position: relative;
+    height: 90%;
+    overflow-y: scroll;
+    top: 5%;
+}
+
+.admin_body_add{
+    width: 100%;
+    padding: 20px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 30%;
+    border-bottom: 3px solid rgb(255, 94, 0);
+}
+
+.admin_body_add h3{
+    color: rgb(48, 48, 48);
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.admin_body_add form{
+    display: flex;
+    width: 100%;
+}
+
+.admin_body_add div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: .3s;
+    width: 30%;
+    margin-right: 30px;
+}
+
+.admin_body_add div input{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    padding: 13px 10px;
+    transition: .3s;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.admin_body_add_inside div:nth-child(2) input:focus,
+.admin_body_add_inside div:nth-child(1) input:focus,
+.admin_body_add div input:focus{
+    background: rgb(255, 94, 0);
+    color: white;
+}
+
+.admin_body_add_inside div:nth-child(2) input:focus::placeholder,
+.admin_body_add_inside div:nth-child(1) input:focus::placeholder,
+.admin_body_add div input:focus::placeholder{
+    color: white;
+}
+
+.admin_body_add_inside{
+    height: 400px;
+}
+
+.admin_body_add_inside div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.admin_body_add_inside div:nth-child(2) input,
+.admin_body_add_inside div:nth-child(1) input{
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    padding: 13px 10px;
+    transition: .3s;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.admin_body_add_inside div:nth-child(2){
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.admin_body_add_inside div:nth-child(2) span{
+    position: relative;
+    width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 5px;
+    color: grey;
+    margin-right: 30px;
+    height: 30px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.stateClothe{
+    width: 170px !important;
+}
+
+.admin_body_add_inside div:nth-child(2) span div{
+    position: absolute;
+    bottom: -620%;
+    overflow: hidden;
+    transition: .3s;
+    transform: scale(.9);
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0px 0px 3px 3px rgb(233, 233, 233);
+    flex-direction: column;
+    display: flex;
+    background: white;
+}
+
+.admin_body_add_inside div:nth-child(2) span div p{
+    margin: 0px;
+    color: grey;
+    text-align: center;
+    transition: .3s;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.admin_body_add_inside div:nth-child(2) input{
+    width: 20%;
+    height: 20px;
+}
+
+.admin_body_add_inside div:nth-child(2) span div p:hover{
+    background: rgb(255, 94, 0);
+    color: white;
+}
+
+.admin_body_add_inside div:nth-child(2) textarea{
+    width: 35%;
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    padding: 10px;
+    transition: .3s;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.admin_body_add_inside div:nth-child(2) textarea:focus{
+    background: rgb(255, 94, 0);
+    color: white;
+}
+
+.admin_body_add_inside div:nth-child(2) textarea:focus::placeholder{
+    color: white;
+}
+
+.sizeActive{
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    pointer-events: all !important;
+}
+
+.admin_body_add_inside_btn{
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.admin_body_add form div button,
+.admin_body_add_inside_btn button{
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid rgb(158, 158, 158);
+    outline: none;
+    transition: .3s;
+    border-radius: 5px;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+    width: 150px;
+    height: 35px;
+    background: white;
+}
+
+.admin_body_add form div button:hover,
+.admin_body_add_inside_btn button:hover{
+    color: white;
+    background: rgb(255, 94, 0);
+}
+
+.admin_body_content{
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.admin_body_content h3{
+    color: rgb(255, 94, 0);
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.admin_body_content_inner{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgb(243, 243, 243);
+}
+
+.admin_body_content_inner img{
+    width: 20%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.admin_body_content_inner div{
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+}
+
+.admin_body_content_inner div h4{
+    margin: 0px;
+    color: rgb(61, 61, 61);
+    font-size: 25px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 85%;
+}
+
+.admin_body_content_inner div ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    top: 0;
+    height: 100%;
+}
+
+.admin_body_content_inner div ul li{
+    margin: 10px 0;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 25px;
+    transition: .3s;
+}
+
+.admin_body_content_inner div ul li:hover{
+    color: rgb(255, 94, 0);
+}
+
+.editBackBtn{
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 100px;
+    display: block;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.editBackBtn:hover{
+    color: white;
+    background: rgb(255, 94, 0);
+}
+
+.stateClothe h5{
+    position: absolute;
+    bottom: -600%;
+    transition: .3s;
+    border-radius: 10px;
+    width: 90px;
+    height: 140px;
+    pointer-events: none;
+    transform: scale(.9);
+    opacity: 0;
+    box-shadow: 0px 0px 3px 3px rgb(233, 233, 233);
+    overflow-y: scroll;
+    background: white;
+}
+
+.stateClothe h5 p{
+    margin: 0px;
+    cursor: pointer;
+    transition: .3s;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.chooseCategory span h5 p:hover,
+.stateClothe h5 p:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(255, 94, 0);
+}
+
+.activeState{
+    transform: scale(1) !important;
+    pointer-events: all !important;
+    opacity: 1 !important;
+}
+
+.chooseCategory{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px; 
+    margin-top: 20px;
+    height: 30px !important;
+}
+
+.chooseCategory h4{
+    font-size: 20px;
+    margin: 10px 0;
+    
+}
+
+.chooseCategory span{
+    margin-left: 30px;
+    border: 1px solid grey;
+    transition: .3s;
+    position: relative;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.chooseCategory span h5{
+    position: absolute;
+    background: white;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    z-index: 3;
+    transition: .3s;
+    transform: scale(.9);
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    height: 140px;
+    bottom: -180px;
+    border-radius: 5px;
+    width: 70px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 3px 3px rgb(233, 233, 233);
+}
+
+.activeCategory{
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    pointer-events: all !important;
+}
+
+.chooseCategory span:hover{
+    color: rgb(255, 94, 0);
+}
+
+.chooseCategory span h5 p{
+    margin: 0px;
+    height: 33%;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    display: flex;
+    color: grey;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1100px){
+    
+    .admin_body_add_inside div:nth-child(2) input{
+        width: 35%;
+    }
+
+    .admin_body_add_inside div:nth-child(2) textarea{
+        margin-top: 30px;
+        height: 140px;
+        width: 40%;
+    }
+
+    .admin_body_add div{
+        width: 45%;
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .admin_body_add_inside{
+        height: 430px;
+    }
+
+    .admin_body_add form{
+        flex-wrap: wrap;
+    }
+}   
+
+@media screen and (max-width: 1000px){
+
+    .admin_body_add_inside div:nth-child(1) input{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .admin_body_add_inside{
+        height: 500px;
+    }
+
+    .admin_body_add_inside div:nth-child(2) span{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .admin_body_add div{
+        width: 70%;
+    }
+
+    .admin_body_add_inside div:nth-child(1) input{
+        width:70%;
+    }
+
+    .admin_body_add_inside{
+        height: 630px;
+    }
+    
+    .admin_body_add_inside div:nth-child(2) input{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    .admin_body_add_inside div:nth-child(1) input{
+        width: 100%;
+    }
+
+    .admin_body_add_inside div:nth-child(2) input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .admin_body_add_inside div:nth-child(2){
+        margin-top: 0px;
+        padding: 0px;
+    }
+    
+    .admin_body_add_inside div:nth-child(2) textarea{
+        width: 100%;
+    }
+
+    .admin_body_add div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .admin_body_add_inside div:nth-child(2) span{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .admin_body_add_inside div:nth-child(2) span{
+        width: 45% !important;
+        margin: 0px;
+    }
+
+    .admin_body_add_inside div:nth-child(2) textarea{
+        margin-top: 20px;
+    }
+
+    .admin_body_content h3{
+        margin-bottom: 30px;
+    }
+}

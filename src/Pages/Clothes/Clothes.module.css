@@ -1,0 +1,511 @@
+
+.root{
+    width: 90%;
+    margin: 0 auto;
+    height: 600px;
+}
+
+.search_header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid rgb(255, 94, 0);
+}
+
+.error{
+    width: 100%;
+    height: 300px;
+    font-size: 40px;
+    margin: 0px;
+    color: rgb(255, 94, 0);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.search_header input{
+    width: 35%;
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    padding: 13px 10px;
+    transition: .3s;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.search_header input:focus{
+    background: rgb(255, 94, 0);
+    color: white;
+}
+
+.search_header input:focus::placeholder{
+    color: white;
+}
+
+.search_header span{
+    cursor: pointer;
+    margin-left: 100px;
+    padding: 0px 15px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    border: 1px solid grey;
+    color: rgb(78, 78, 78);
+    border-radius: 5px;
+}
+
+.search_header span div{
+    width: 100px;
+    position: absolute;
+    box-shadow: 0px 0px 3px 3px rgb(233, 233, 233);
+    background: white;
+    bottom: -160px;
+    border-radius: 5px;
+    height: 150px;
+    overflow-y: scroll !important;
+    transition: .3s;
+    overflow: hidden;
+    pointer-events: none;
+    transform: scale(.9);
+    opacity: 0;
+}
+
+.search_header span div p{
+    margin: 0px;
+    height: 40px;
+    transition: .3s;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.search_header span div p:hover{
+    color: white;
+    background: rgb(255, 94, 0);
+}
+
+.activeFilter{
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    pointer-events: all !important;
+}
+
+.admin_body_content_inner{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgb(224, 224, 224);
+}
+
+.admin_body_content_inner img{
+    width: 20%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.admin_body_content_inner div{
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+}
+
+.admin_body_content_inner div h4{
+    margin: 0px;
+    color: rgb(61, 61, 61);
+    font-size: 25px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 85%;
+}
+
+.admin_body_content_inner div ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    top: 0;
+    height: 100%;
+}
+
+.admin_body_content_inner div ul li{
+    margin: 10px 0;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 25px;
+    transition: .3s;
+}
+
+.search_body{
+    padding-top: 40px;
+    height: 400px;
+    padding-bottom: 100px;
+    overflow-y: scroll;
+}
+
+.admin_body_content_inner div ul li:hover{
+    color: rgb(255, 94, 0);
+}
+
+.editBackBtn{
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 100px;
+    display: block;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.editBackBtn:hover{
+    color: white;
+    background: rgb(255, 94, 0);
+}
+
+.admin_body_add_inside{
+    margin-top: 40px;
+    height: 400px;
+}
+
+.admin_body_add_inside div:nth-child(2) input:focus,
+.admin_body_add_inside div:nth-child(1) input:focus,
+.admin_body_add div input:focus{
+    background: rgb(255, 94, 0);
+    color: white;
+}
+
+.admin_body_add_inside div:nth-child(2) input:focus::placeholder,
+.admin_body_add_inside div:nth-child(1) input:focus::placeholder,
+.admin_body_add div input:focus::placeholder{
+    color: white;
+}
+
+.admin_body_add_inside div:nth-child(1){
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin_body_add_inside div:nth-child(2) input,
+.admin_body_add_inside div:nth-child(1) input{
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    padding: 13px 10px;
+    transition: .3s;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.admin_body_add_inside div:nth-child(2){
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.admin_body_add_inside div:nth-child(2) span{
+    position: relative;
+    width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 5px;
+    color: grey;
+    margin-right: 30px;
+    height: 30px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.stateClothe{
+    width: 170px !important;
+}
+
+.admin_body_add_inside div:nth-child(2) span div{
+    position: absolute;
+    bottom: -620%;
+    overflow: hidden;
+    transition: .3s;
+    transform: scale(.9);
+    pointer-events: none;
+    opacity: 0;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0px 0px 3px 3px rgb(233, 233, 233);
+    flex-direction: column;
+    display: flex;
+    background: white;
+}
+
+.admin_body_add_inside div:nth-child(2) span div p{
+    margin: 0px;
+    color: grey;
+    text-align: center;
+    transition: .3s;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.admin_body_add_inside div:nth-child(2) input{
+    width: 20%;
+    height: 20px;
+}
+
+.admin_body_add_inside div:nth-child(2) span div p:hover{
+    background: rgb(255, 94, 0);
+    color: white;
+}
+
+.admin_body_add_inside div:nth-child(2) textarea{
+    width: 50%;
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    padding: 10px;
+    transition: .3s;
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.admin_body_add_inside div:nth-child(2) textarea:focus{
+    background: rgb(255, 94, 0);
+    color: white;
+}
+
+.admin_body_add_inside div:nth-child(2) textarea:focus::placeholder{
+    color: white;
+}
+
+.sizeActive{
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    pointer-events: all !important;
+}
+
+.admin_body_add_inside_btn{
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.admin_body_add form div button,
+.admin_body_add_inside_btn button{
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid rgb(158, 158, 158);
+    outline: none;
+    transition: .3s;
+    border-radius: 5px;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+    width: 150px;
+    height: 35px;
+    background: white;
+}
+
+.admin_body_add form div button:hover,
+.admin_body_add_inside_btn button:hover{
+    color: white;
+    background: rgb(255, 94, 0);
+}
+
+.stateClothe{
+    width: 170px !important;
+}
+
+.stateClothe h5{
+    position: absolute;
+    bottom: -620%;
+    transition: .3s;
+    border-radius: 10px;
+    width: 90px;
+    height: 150px;
+    pointer-events: none;
+    overflow: hidden;
+    transform: scale(.9);
+    opacity: 0;
+    box-shadow: 0px 0px 3px 3px rgb(233, 233, 233);
+    background: white;
+}
+
+.stateClothe h5 p{
+    margin: 0px;
+    cursor: pointer;
+    transition: .3s;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.chooseCategory span h5 p:hover,
+.stateClothe h5 p:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(255, 94, 0);
+}
+
+.activeState{
+    transform: scale(1) !important;
+    pointer-events: all !important;
+    opacity: 1 !important;
+}
+
+.backBtn{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.backBtn span{
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: rgb(255, 94, 0);
+}
+
+@media screen and (max-width: 1100px){
+
+    .search_header input{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .admin_body_add_inside div:nth-child(1) input{
+        width: 60% !important;
+        margin-bottom: 30px;
+    }
+
+    .admin_body_add_inside{
+        height: 100%;
+        overflow-y: scroll;
+    }
+    
+    .admin_body_add_inside div:nth-child(2) textarea{
+        width: 60%;
+        margin-top: 30px;
+    }
+
+    .admin_body_add_inside div:nth-child(2){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .root{
+        height: 600px;
+    }
+
+    .search_body{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .admin_body_add_inside div:nth-child(2) textarea,
+    .admin_body_add_inside div:nth-child(1) input{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .search_header{
+        justify-content: flex-start;
+    }
+
+    .search_header input{
+        width: 100%;
+        order: 2;
+    }
+
+    .search_header span{
+        order: 1;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .admin_body_content_inner img{
+        width: 30%;
+    }
+    
+    .admin_body_content_inner div{
+        width: 70%;
+    }
+    
+    .admin_body_content_inner div h4{
+        font-size: 22px;
+        width: 75%;
+    }
+    
+    .admin_body_content_inner div ul{
+        width: 20%;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .error{
+        font-size: 30px;
+    }
+
+    .admin_body_add_inside div:nth-child(2){
+        margin-top: 0px;
+        justify-content: space-around;
+    }
+
+    .admin_body_add_inside div:nth-child(2) span{
+        margin: 0px;
+    }
+
+    .admin_body_content_inner div h4{
+        font-size: 20px;
+        width: 75%;
+    }
+
+    .admin_body_content_inner img{
+        width: 25%;
+    }
+    
+    .admin_body_content_inner div{
+        width: 70%;
+    }
+
+    .root{
+        width: 95%;
+    }
+}
